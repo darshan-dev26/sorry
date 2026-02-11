@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivani 🤍 I'm Sorry</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Side navigation dots -->
+    <nav class="section-nav" id="sectionNav">
+      <div class="nav-dot active" data-index="0"></div>
+      <div class="nav-dot" data-index="1"></div>
+      <div class="nav-dot" data-index="2"></div>
+      <div class="nav-dot" data-index="3"></div>
+      <div class="nav-dot" data-index="4"></div>
+      <div class="nav-dot" data-index="5"></div>
+      <div class="nav-dot" data-index="6"></div>
+      <div class="nav-dot" data-index="7"></div>
+      <div class="nav-dot" data-index="8"></div>
+    </nav>
+
+    <!-- Particle canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Floating background hearts -->
+    <div class="floating-hearts-bg" id="floatingHearts"></div>
+
+    <!-- ===== 0: HERO ===== -->
+    <section class="snap-section hero" id="sec0">
+      <div class="hero-content">
+        <div class="hero-crown anim-item">👑</div>
+        <h1 class="anim-item" style="--delay: 0.15s">Shivani 🤍 I'm Sorry</h1>
+        <div class="hero-line anim-item" style="--delay: 0.3s"></div>
+        <p class="hero-sub anim-item" style="--delay: 0.45s">
+          "please mani javv ne ane ek var maaf kari dyo ne"
+        </p>
+        <p class="hero-note anim-item" style="--delay: 0.6s">
+          This is not just a website.<br />This is my heart, trying to reach
+          yours.
+        </p>
+        <button
+          class="hero-btn anim-item"
+          style="--delay: 0.75s"
+          id="openHeartBtn"
+        >
+          Open My Heart 💖
+        </button>
+        <div class="scroll-hint anim-item" style="--delay: 0.9s">
+          <div class="mouse"><div class="wheel"></div></div>
+          <p>Scroll Down</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 1: APOLOGY ===== -->
+    <section class="snap-section apology-sec" id="sec1">
+      <h2 class="sec-title anim-item">💔 From My Heart</h2>
+      <div class="prose-card anim-item" style="--delay: 0.2s">
+        <div class="prose-glow"></div>
+        <p class="prose-dear">Dear Shivani,</p>
+        <p>I can only imagine how difficult this silence has been for you.</p>
+        <p>
+          I know my actions hurt you<br />and made you feel unheard.<br />
+          I’m not here to explain myself or make excuses.
+        </p>
+        <p class="prose-highlight">
+          I’m here because I want to understand you better,<br />
+          and I want the chance to do right by you.
+        </p>
+        <p>You matter to me. Always.</p>
+        <p class="prose-sign">— with honesty and care 🤍</p>
+      </div>
+    </section>
+
+    <!-- ===== 2: ABOUT HER ===== -->
+    <section class="snap-section about-sec" id="sec2">
+      <h2 class="sec-title anim-item">Everything I Love About You 👑</h2>
+      <p class="about-subtitle anim-item" style="--delay: 0.1s">
+        Every little thing that makes you — <em>you</em>.
+      </p>
+
+      <div class="traits-grid">
+        <div
+          class="trait-card anim-item"
+          style="--delay: 0.18s; --accent: #e040fb"
+        >
+          <div class="trait-icon-wrap"><span class="trait-icon">💬</span></div>
+          <h3 class="trait-title">Your Voice</h3>
+          <p class="trait-desc">
+            Your voice brings warmth to any moment. Right now, I quietly miss
+            hearing it.
+          </p>
+        </div>
+
+        <div
+          class="trait-card anim-item"
+          style="--delay: 0.24s; --accent: #26a69a"
+        >
+          <div class="trait-icon-wrap"><span class="trait-icon">☕</span></div>
+          <h3 class="trait-title">Chai Addict</h3>
+          <p class="trait-desc">
+            You love your chai. Those simple tea moments feel special because of
+            you.
+          </p>
+        </div>
+
+        <div
+          class="trait-card anim-item"
+          style="--delay: 0.3s; --accent: #ef5350"
+        >
+          <div class="trait-icon-wrap"><span class="trait-icon">🤍</span></div>
+          <h3 class="trait-title">Kind & Real</h3>
+          <p class="trait-desc">
+            You are honest, kind, and genuine. Those qualities make you truly
+            special.
+          </p>
+        </div>
+
+        <div
+          class="trait-card anim-item"
+          style="--delay: 0.12s; --accent: #ff6b9d"
+        >
+          <div class="trait-icon-wrap"><span class="trait-icon">💼</span></div>
+          <h3 class="trait-title">QA Queen</h3>
+          <p class="trait-desc">
+            Your eye for detail and dedication inspire me to do better in my own
+            work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3: HOW I SEE YOU ===== -->
+    <section class="snap-section seeyou-sec" id="sec3">
+      <h2 class="sec-title anim-item">How I See You 🤍</h2>
+      <div class="seeyou-card anim-item" style="--delay: 0.2s">
+        <div class="seeyou-line"></div>
+        <p>I don’t call you my princess because of a title.</p>
+        <p class="seeyou-highlight">
+          I call you that because you deserve<br />
+          <span class="seeyou-word">care,</span>
+          <span class="seeyou-word">respect,</span>
+          <span class="seeyou-word">and gentle love —</span>
+        </p>
+        <p class="seeyou-contrast">
+          not pressure,<br />not control,<br />not expectations.
+        </p>
+        <p class="seeyou-closing">That’s how I see you.</p>
+      </div>
+    </section>
+
+    <!-- ===== 4: PROMISE DAY ===== -->
+    <section class="snap-section promise-sec" id="sec4">
+      <div class="promise-badge anim-item">Happy Promise Day ❤️</div>
+      <h2 class="sec-title anim-item">My Promises to You 💍</h2>
+      <div class="prose-card prose-card-alt anim-item" style="--delay: 0.2s">
+        <div class="prose-glow"></div>
+        <p class="prose-intro">
+          On this Promise Day, I don't want to make dramatic promises.<br />I
+          want to make honest ones.
+        </p>
+        <div class="promise-list">
+          <div class="promise-row anim-item" style="--delay: 0.25s">
+            <span class="p-icon">🤍</span> I’m working on listening more and
+            reacting less.
+          </div>
+          <div class="promise-row anim-item" style="--delay: 0.3s">
+            <span class="p-icon">🤍</span> I’m learning to respect your space
+            and your boundaries.
+          </div>
+          <div class="promise-row anim-item" style="--delay: 0.35s">
+            <span class="p-icon">🤍</span> I will show up with care, not
+            pressure.
+          </div>
+        </div>
+        <p class="prose-closing">
+          These aren’t just words.<br />I’m already working on them.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 5: LITTLE JOYS ===== -->
+    <section class="snap-section joys-sec" id="sec5">
+      <h2 class="sec-title anim-item">Your Smiles, My Happiness 😊</h2>
+      <div class="joys-grid">
+        <div class="joy-card anim-item" style="--delay: 0.1s">
+          <div class="joy-icon">✈️</div>
+          <p>
+            I want to travel the world with you<br />and create memories in
+            every city.
+          </p>
+        </div>
+        <div class="joy-card anim-item" style="--delay: 0.2s">
+          <div class="joy-icon">🎮</div>
+          <p>
+            I want to play games with you,<br />laugh, lose, and win together.
+          </p>
+        </div>
+        <div class="joy-card anim-item" style="--delay: 0.3s">
+          <div class="joy-icon">🍔</div>
+          <p>
+            I want to take you on simple food dates,<br />sharing fast food,
+            smiles, and silly conversations.
+          </p>
+        </div>
+      </div>
+      <p class="joys-footer anim-item" style="--delay: 0.4s">
+        Because loving you is not only about big moments,<br />it's about
+        enjoying the small ones together.
+      </p>
+    </section>
+
+    <!-- ===== 6: SELF-REALIZATION ===== -->
+    <section class="snap-section realize-sec" id="sec6">
+      <h2 class="sec-title anim-item">What I Understand Now 🤍</h2>
+      <div class="prose-card anim-item" style="--delay: 0.2s">
+        <div class="prose-glow"></div>
+        <p>
+          I understand that you were hurt.<br />I understand that silence can be
+          a way to protect yourself.<br />I understand that trust doesn't return
+          instantly.
+        </p>
+        <p class="prose-highlight">
+          And I understand that love needs patience,<br />not pressure.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 7: FINAL HEART MESSAGE ===== -->
+    <section class="snap-section msg-sec" id="sec7">
+      <h2 class="sec-title anim-item">My Heart Speaks… 💌</h2>
+      <div class="msg-book anim-item" style="--delay: 0.2s">
+        <div class="book-left"></div>
+        <div class="book-right">
+          <p class="typed" id="typedText"></p>
+          <span class="blink-cursor" id="blinkCursor">|</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8: FINAL BUTTON ===== -->
+    <section class="snap-section forgive-sec" id="sec8">
+      <div class="big-heart-wrap anim-item">
+        <div class="big-heart-ring r1"></div>
+        <div class="big-heart-ring r2"></div>
+        <div class="big-heart-ring r3"></div>
+        <button class="forgive-btn" id="forgiveBtn">
+          I'm Still Choosing You ❤️
+        </button>
+      </div>
+    </section>
+
+    <!-- Explosion container -->
+    <div class="explosion-layer" id="explosionLayer"></div>
+
+    <!-- Forgive overlay -->
+    <div class="forgive-overlay" id="forgiveOverlay">
+      <div class="overlay-inner">
+        <div class="ov-emoji">🤍</div>
+        <div class="ov-text">
+          No matter what happens,<br />you matter to me.<br /><br />
+          If you forgive me,<br />I'll value it with my whole heart.<br />
+          If not,<br />I'll still respect you and your feelings.<br /><br />
+          You will always have my honesty,<br />my care,<br />and my respect. ❤️
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
